@@ -1,0 +1,27 @@
+name: computer-vision-env
+
+channels:
+  - conda-forge
+  - defaults
+
+dependencies:
+  - python
+  - ipykernel
+  - numpy
+  - pandas
+  - missingno
+  - seaborn
+  - matplotlib
+  - pillow
+  - keras
+  - tensorflow
+  - scikit-image
+  - tensorflow
+  - pytorch
+  - pip
+  - pip:
+    - keras_unet
+    - imbalanced-learn
+    - opencv-python
+    - scipy
+    - tensorflow-hub
