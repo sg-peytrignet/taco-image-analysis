@@ -18,6 +18,8 @@ dependencies:
   - scikit-image
   - tensorflow
   - pytorch
+  - kaggle
+  - scikit-image
   - pip
   - pip:
     - keras_unet
