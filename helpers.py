@@ -71,7 +71,7 @@ def display_images_with_coco_annotations(image_id_subset, figtitle, dataset_path
     fig.suptitle(figtitle)
     plt.show()
 
-def show_annotation_image(annotation_id, annotations):
+def show_annotation_image(annotation_id, annotations, dataset_path):
     """
     Function to display untransformed images.
 
@@ -83,10 +83,10 @@ def show_annotation_image(annotation_id, annotations):
     - numpy.ndarray: The untransformed image in RGB format.
     """
     # Get image id
-    image_id = next(annot["image_id"] for annot in annotdata['annotations'] if annot["id"] == annotation_id)
+    image_id = next(annot["image_id"] for annot in annotations['annotations'] if annot["id"] == annotation_id)
 
     # Get image location
-    image_filename = next(img["file_name"] for img in annotdata['images'] if img["id"] == image_id)
+    image_filename = next(img["file_name"] for img in annotations['images'] if img["id"] == image_id)
     image_location = os.path.join(dataset_path, image_filename)
 
     # Get image
@@ -96,7 +96,7 @@ def show_annotation_image(annotation_id, annotations):
     return image_to_show
 
 
-def try_square_crop(annotation_id,annotations,widen_param,newsize):
+def try_square_crop(annotation_id,annotations,widen_param,newsize,dataset_path):
     """
     Function to resize images into standard square sizes,
     so they can be used in machine learning models.
@@ -115,10 +115,10 @@ def try_square_crop(annotation_id,annotations,widen_param,newsize):
     widen_param = min(1,widen_param)
 
     #Get image id for the selected annotation
-    image_id = next(annot["image_id"] for annot in annotdata['annotations'] if annot["id"]==annotation_id)
+    image_id = next(annot["image_id"] for annot in annotations['annotations'] if annot["id"]==annotation_id)
 
     #Get image location
-    image_filename = next(img["file_name"] for img in annotdata['images'] if img["id"]==image_id)
+    image_filename = next(img["file_name"] for img in annotations['images'] if img["id"]==image_id)
     image_location = os.path.join(dataset_path, image_filename)
 
     #Get image
@@ -166,7 +166,7 @@ def try_square_crop(annotation_id,annotations,widen_param,newsize):
     return cropped_image_with_border
 
 
-def mask_and_square_crop(annotation_id, annotations, widen_param, newsize):
+def mask_and_square_crop(annotation_id, annotations, widen_param, newsize, dataset_path):
     """
     Function to create a binary mask for each annotation and resize it according to the same criteria found in the 'try_square_crop' function.
 
@@ -183,10 +183,10 @@ def mask_and_square_crop(annotation_id, annotations, widen_param, newsize):
     widen_param = min(1, widen_param)
 
     # Get image id for the selected annotation
-    image_id = next(annot["image_id"] for annot in annotdata['annotations'] if annot["id"] == annotation_id)
+    image_id = next(annot["image_id"] for annot in annotations['annotations'] if annot["id"] == annotation_id)
 
     # Get image location
-    image_filename = next(img["file_name"] for img in annotdata['images'] if img["id"] == image_id)
+    image_filename = next(img["file_name"] for img in annotations['images'] if img["id"] == image_id)
     image_location = os.path.join(dataset_path, image_filename)
 
     # Get image
