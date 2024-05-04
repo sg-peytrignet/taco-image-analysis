@@ -1,5 +1,6 @@
 # Data files
 *.jpg
+*.JPG
 *.csv
 
 # Byte-compiled / optimized / DLL files
