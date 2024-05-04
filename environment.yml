@@ -15,6 +15,7 @@ dependencies:
   - pillow
   - keras
   - tensorflow
+  - tensorflow-hub
   - scikit-image
   - tensorflow
   - pytorch
@@ -26,4 +27,3 @@ dependencies:
     - imbalanced-learn
     - opencv-python
     - scipy
-    - tensorflow-hub
