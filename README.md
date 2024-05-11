@@ -38,15 +38,15 @@
 
 ##  Quick Links
 
-> - [ Overview](#-overview)
-> - [ Features](#-features)
-> - [ Repository Structure](#-repository-structure)
-> - [ Modules](#-modules)
-> - [ Getting Started](#-getting-started)
->   - [ Installation](#-installation)
->   - [ Running trash-images-analysis](#-running-trash-images-analysis)
-> - [ Contributing](#-contributing)
-> - [ License](#-license)
+> - [ Overview](#overview)
+> - [ Features](#features)
+> - [ Repository Structure](#repository-structure)
+> - [ Modules](#modules)
+> - [ Getting Started](#getting-started)
+>   - [ Installation](#installation)
+>   - [ Running trash-images-analysis](#running-trash-images-analysis)
+> - [ Contributing](#contributing)
+> - [ License](#license)
 > - [ Acknowledgments](#acknowledgments)
 
 ---
@@ -185,6 +185,6 @@ This project is protected under the [MIT]([https://choosealicense.com/licenses](
 - Thank you to the resources published by [Dr. Sreenivas Bhattiprolu](https://github.com/bnsreenu/python_for_microscopists/blob/master/335%20-%20Converting%20COCO%20JSON%20annotations%20to%20labeled%20mask%20images/335d-convert_coco_to_labeled_masks.py), which were useful to pre-process image data and annotations in the COCO-Json format.
 - And thank you to my supervisors at the Ecole Polytechnique Federale de Lausanne for their guidance on carrying out this project.
 
-[**Return**](#-quick-links)
+[**Return**](#quick-links)
 
 ---
