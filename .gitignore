@@ -3,6 +3,7 @@
 *.JPG
 *.csv
 data/TACO/data/**/*.json
+**/classification-images.npz
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
