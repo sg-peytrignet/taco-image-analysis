@@ -110,7 +110,7 @@ HTTP error 429 for prompt `features`
 | [05_segmenting_images.ipynb](https://github.com/sg-peytrignet/trash-images-analysis/blob/master/notebooks/05_segmenting_images.ipynb)                           | `notebooks/05_segmenting_images.ipynb`              |
 | [04_classifying_objects.ipynb](https://github.com/sg-peytrignet/trash-images-analysis/blob/master/notebooks/04_classifying_objects.ipynb)                       | `notebooks/04_classifying_objects.ipynb`            |
 | [02_exploratory_data_analysis.ipynb](https://github.com/sg-peytrignet/trash-images-analysis/blob/master/notebooks/02_exploratory_data_analysis.ipynb)           | `notebooks/02_exploratory_data_analysis.ipynb`      |
-| [03_image_processing_for_ML_models.ipynb](https://github.com/sg-peytrignet/trash-images-analysis/blob/master/notebooks/03_image_processing_for_ML_models.ipynb) | HTTP error 429 for prompt `notebooks/03_image_processing_for_ML_models.ipynb` |
+| [03_image_processing_for_ML_models.ipynb](https://github.com/sg-peytrignet/trash-images-analysis/blob/master/notebooks/03_image_processing_for_ML_models.ipynb) | `notebooks/03_image_processing_for_ML_models.ipynb` |
 
 </details>
 
@@ -119,6 +119,8 @@ HTTP error 429 for prompt `features`
 ##  Getting Started
 
 ***Requirements***
+
+Ensure you have conda installed on your system before creating the environment. You can refer to the official conda documentation for [installation instructions](https://conda.io/projects/conda/en/latest/user-guide/install/).
 
 Ensure you have the following dependencies installed on your system:
 
@@ -138,19 +140,22 @@ git clone https://github.com/sg-peytrignet/trash-images-analysis
 cd trash-images-analysis
 ```
 
-3. Install the dependencies:
+3. Install the dependencies with conda:
 
 ```sh
-pip install -r requirements.txt
+# We recommend installing the libmamba solver, which is faster
+conda install -n base conda-libmamba-solver
+
+# Create new environment called 'taco-env' with the required packages 
+conda env create -n taco-env -f environment.yml --solver mamba
+
+# Activate the new environment
+conda activate taco-env
 ```
 
 ###  Running trash-images-analysis
 
-Use the following command to run each notebook in trash-images-analysis:
-
-```sh
-jupyter nbconvert --execute notebook.ipynb
-```
+Run each notebook in the IDE of your choice, such as JupyterLab or Visual Studio.
 
 ---
 
