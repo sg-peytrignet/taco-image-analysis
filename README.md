@@ -112,10 +112,10 @@ HTTP error 429 for prompt `features`
 | File                                                                                                                                                            | Summary                                                                       |
 | ---                                                                                                                                                             | ---                                                                           |
 | [01_download_data.ipynb](https://github.com/sg-peytrignet/trash-images-analysis/blob/master/notebooks/01_download_data.ipynb)                                   | `notebooks/01_download_data.ipynb`                  |
-| [05_segmenting_images.ipynb](https://github.com/sg-peytrignet/trash-images-analysis/blob/master/notebooks/05_segmenting_images.ipynb)                           | `notebooks/05_segmenting_images.ipynb`              |
-| [04_classifying_objects.ipynb](https://github.com/sg-peytrignet/trash-images-analysis/blob/master/notebooks/04_classifying_objects.ipynb)                       | `notebooks/04_classifying_objects.ipynb`            |
 | [02_exploratory_data_analysis.ipynb](https://github.com/sg-peytrignet/trash-images-analysis/blob/master/notebooks/02_exploratory_data_analysis.ipynb)           | `notebooks/02_exploratory_data_analysis.ipynb`      |
 | [03_image_processing_for_ML_models.ipynb](https://github.com/sg-peytrignet/trash-images-analysis/blob/master/notebooks/03_image_processing_for_ML_models.ipynb) | `notebooks/03_image_processing_for_ML_models.ipynb` |
+| [04_classifying_objects.ipynb](https://github.com/sg-peytrignet/trash-images-analysis/blob/master/notebooks/04_classifying_objects.ipynb)                       | `notebooks/04_classifying_objects.ipynb`            |
+| [05_segmenting_images.ipynb](https://github.com/sg-peytrignet/trash-images-analysis/blob/master/notebooks/05_segmenting_images.ipynb)                           | `notebooks/05_segmenting_images.ipynb`              |
 
 </details>
 
