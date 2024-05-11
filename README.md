@@ -2,16 +2,16 @@
   <img src="https://cdn-icons-png.flaticon.com/512/6295/6295417.png" width="100" />
 </p>
 <p align="center">
-    <h1 align="center">TACO-IMAGE-ANALYSIS</h1>
+    <h1 align="center">TRASH-IMAGES-ANALYSIS</h1>
 </p>
 <p align="center">
     <em>HTTP error 429 for prompt `slogan`</em>
 </p>
 <p align="center">
-	<img src="https://img.shields.io/github/license/sg-peytrignet/taco-image-analysis?style=flat&color=0080ff" alt="license">
-	<img src="https://img.shields.io/github/last-commit/sg-peytrignet/taco-image-analysis?style=flat&logo=git&logoColor=white&color=0080ff" alt="last-commit">
-	<img src="https://img.shields.io/github/languages/top/sg-peytrignet/taco-image-analysis?style=flat&color=0080ff" alt="repo-top-language">
-	<img src="https://img.shields.io/github/languages/count/sg-peytrignet/taco-image-analysis?style=flat&color=0080ff" alt="repo-language-count">
+	<img src="https://img.shields.io/github/license/sg-peytrignet/trash-images-analysis?style=flat&color=0080ff" alt="license">
+	<img src="https://img.shields.io/github/last-commit/sg-peytrignet/trash-images-analysis?style=flat&logo=git&logoColor=white&color=0080ff" alt="last-commit">
+	<img src="https://img.shields.io/github/languages/top/sg-peytrignet/trash-images-analysis?style=flat&color=0080ff" alt="repo-top-language">
+	<img src="https://img.shields.io/github/languages/count/sg-peytrignet/trash-images-analysis?style=flat&color=0080ff" alt="repo-language-count">
 <p>
 <p align="center">
 		<em>Developed with the software and tools below.</em>
@@ -31,39 +31,39 @@
 </p>
 <hr>
 
-## 🔗 Quick Links
+##  Quick Links
 
-> - [📍 Overview](#-overview)
-> - [📦 Features](#-features)
-> - [📂 Repository Structure](#-repository-structure)
-> - [🧩 Modules](#-modules)
-> - [🚀 Getting Started](#-getting-started)
->   - [⚙️ Installation](#️-installation)
->   - [🤖 Running taco-image-analysis](#-running-taco-image-analysis)
->   - [🧪 Tests](#-tests)
-> - [🛠 Project Roadmap](#-project-roadmap)
-> - [🤝 Contributing](#-contributing)
-> - [📄 License](#-license)
-> - [👏 Acknowledgments](#-acknowledgments)
+> - [ Overview](#-overview)
+> - [ Features](#-features)
+> - [ Repository Structure](#-repository-structure)
+> - [ Modules](#-modules)
+> - [ Getting Started](#-getting-started)
+>   - [ Installation](#-installation)
+>   - [ Running trash-images-analysis](#-running-trash-images-analysis)
+>   - [ Tests](#-tests)
+> - [ Project Roadmap](#-project-roadmap)
+> - [ Contributing](#-contributing)
+> - [ License](#-license)
+> - [ Acknowledgments](#-acknowledgments)
 
 ---
 
-## 📍 Overview
+##  Overview
 
 HTTP error 429 for prompt `overview`
 
 ---
 
-## 📦 Features
+##  Features
 
 HTTP error 429 for prompt `features`
 
 ---
 
-## 📂 Repository Structure
+##  Repository Structure
 
 ```sh
-└── taco-image-analysis/
+└── trash-images-analysis/
     ├── LICENSE
     ├── README.md
     ├── data
@@ -75,50 +75,45 @@ HTTP error 429 for prompt `features`
     │   └── kaggle.json
     ├── environment.yml
     ├── helpers.py
-    └── notebooks
-        ├── 00_download_data.ipynb
-        ├── 01_EDA.ipynb
-        ├── 02_image_processing_for_ML_models.ipynb
-        ├── 03_c1_classifying_objects.ipynb
-        ├── 04_s1_segmenting_images.ipynb
-        ├── 100-segmenting-images.ipynb
-        ├── 97_c2_classifying_materials.ipynb
-        ├── 98-c1-classifying-objects.ipynb
-        └── 99-classifying-materials.ipynb
+    ├── notebooks
+    │   ├── 01_download_data.ipynb
+    │   ├── 02_exploratory_data_analysis.ipynb
+    │   ├── 03_image_processing_for_ML_models.ipynb
+    │   ├── 04_classifying_objects.ipynb
+    │   └── 05_segmenting_images.ipynb
+    └── saved_models
+        └── widen_param_0.05
+            └── segm_model.h5
 ```
 
 ---
 
-## 🧩 Modules
+##  Modules
 
 <details closed><summary>.</summary>
 
-| File                                                                                                | Summary                                     |
-| ---                                                                                                 | ---                                         |
-| [helpers.py](https://github.com/sg-peytrignet/taco-image-analysis/blob/master/helpers.py)           | HTTP error 429 for prompt `helpers.py`      |
-| [environment.yml](https://github.com/sg-peytrignet/taco-image-analysis/blob/master/environment.yml) | HTTP error 429 for prompt `environment.yml` |
+| File                                                                                                  | Summary                                     |
+| ---                                                                                                   | ---                                         |
+| [helpers.py](https://github.com/sg-peytrignet/trash-images-analysis/blob/master/helpers.py)           | HTTP error 429 for prompt `helpers.py`      |
+| [environment.yml](https://github.com/sg-peytrignet/trash-images-analysis/blob/master/environment.yml) | HTTP error 429 for prompt `environment.yml` |
 
 </details>
 
 <details closed><summary>notebooks</summary>
 
-| File                                                                                                                                                          | Summary                                                                       |
-| ---                                                                                                                                                           | ---                                                                           |
-| [97_c2_classifying_materials.ipynb](https://github.com/sg-peytrignet/taco-image-analysis/blob/master/notebooks/97_c2_classifying_materials.ipynb)             | HTTP error 429 for prompt `notebooks/97_c2_classifying_materials.ipynb`       |
-| [03_c1_classifying_objects.ipynb](https://github.com/sg-peytrignet/taco-image-analysis/blob/master/notebooks/03_c1_classifying_objects.ipynb)                 | HTTP error 429 for prompt `notebooks/03_c1_classifying_objects.ipynb`         |
-| [01_EDA.ipynb](https://github.com/sg-peytrignet/taco-image-analysis/blob/master/notebooks/01_EDA.ipynb)                                                       | HTTP error 429 for prompt `notebooks/01_EDA.ipynb`                            |
-| [00_download_data.ipynb](https://github.com/sg-peytrignet/taco-image-analysis/blob/master/notebooks/00_download_data.ipynb)                                   | HTTP error 429 for prompt `notebooks/00_download_data.ipynb`                  |
-| [99-classifying-materials.ipynb](https://github.com/sg-peytrignet/taco-image-analysis/blob/master/notebooks/99-classifying-materials.ipynb)                   | HTTP error 429 for prompt `notebooks/99-classifying-materials.ipynb`          |
-| [98-c1-classifying-objects.ipynb](https://github.com/sg-peytrignet/taco-image-analysis/blob/master/notebooks/98-c1-classifying-objects.ipynb)                 | HTTP error 429 for prompt `notebooks/98-c1-classifying-objects.ipynb`         |
-| [04_s1_segmenting_images.ipynb](https://github.com/sg-peytrignet/taco-image-analysis/blob/master/notebooks/04_s1_segmenting_images.ipynb)                     | HTTP error 429 for prompt `notebooks/04_s1_segmenting_images.ipynb`           |
-| [100-segmenting-images.ipynb](https://github.com/sg-peytrignet/taco-image-analysis/blob/master/notebooks/100-segmenting-images.ipynb)                         | HTTP error 429 for prompt `notebooks/100-segmenting-images.ipynb`             |
-| [02_image_processing_for_ML_models.ipynb](https://github.com/sg-peytrignet/taco-image-analysis/blob/master/notebooks/02_image_processing_for_ML_models.ipynb) | HTTP error 429 for prompt `notebooks/02_image_processing_for_ML_models.ipynb` |
+| File                                                                                                                                                            | Summary                                                                       |
+| ---                                                                                                                                                             | ---                                                                           |
+| [01_download_data.ipynb](https://github.com/sg-peytrignet/trash-images-analysis/blob/master/notebooks/01_download_data.ipynb)                                   | HTTP error 429 for prompt `notebooks/01_download_data.ipynb`                  |
+| [05_segmenting_images.ipynb](https://github.com/sg-peytrignet/trash-images-analysis/blob/master/notebooks/05_segmenting_images.ipynb)                           | HTTP error 429 for prompt `notebooks/05_segmenting_images.ipynb`              |
+| [04_classifying_objects.ipynb](https://github.com/sg-peytrignet/trash-images-analysis/blob/master/notebooks/04_classifying_objects.ipynb)                       | HTTP error 429 for prompt `notebooks/04_classifying_objects.ipynb`            |
+| [02_exploratory_data_analysis.ipynb](https://github.com/sg-peytrignet/trash-images-analysis/blob/master/notebooks/02_exploratory_data_analysis.ipynb)           | HTTP error 429 for prompt `notebooks/02_exploratory_data_analysis.ipynb`      |
+| [03_image_processing_for_ML_models.ipynb](https://github.com/sg-peytrignet/trash-images-analysis/blob/master/notebooks/03_image_processing_for_ML_models.ipynb) | HTTP error 429 for prompt `notebooks/03_image_processing_for_ML_models.ipynb` |
 
 </details>
 
 ---
 
-## 🚀 Getting Started
+##  Getting Started
 
 ***Requirements***
 
@@ -126,18 +121,18 @@ Ensure you have the following dependencies installed on your system:
 
 * **JupyterNotebook**: `version x.y.z`
 
-### ⚙️ Installation
+###  Installation
 
-1. Clone the taco-image-analysis repository:
+1. Clone the trash-images-analysis repository:
 
 ```sh
-git clone https://github.com/sg-peytrignet/taco-image-analysis
+git clone https://github.com/sg-peytrignet/trash-images-analysis
 ```
 
 2. Change to the project directory:
 
 ```sh
-cd taco-image-analysis
+cd trash-images-analysis
 ```
 
 3. Install the dependencies:
@@ -146,15 +141,15 @@ cd taco-image-analysis
 pip install -r requirements.txt
 ```
 
-### 🤖 Running taco-image-analysis
+###  Running trash-images-analysis
 
-Use the following command to run taco-image-analysis:
+Use the following command to run trash-images-analysis:
 
 ```sh
 jupyter nbconvert --execute notebook.ipynb
 ```
 
-### 🧪 Tests
+###  Tests
 
 To execute tests, run:
 
@@ -164,7 +159,7 @@ pytest notebook_test.py
 
 ---
 
-## 🛠 Project Roadmap
+##  Project Roadmap
 
 - [X] `► INSERT-TASK-1`
 - [ ] `► INSERT-TASK-2`
@@ -172,13 +167,13 @@ pytest notebook_test.py
 
 ---
 
-## 🤝 Contributing
+##  Contributing
 
 Contributions are welcome! Here are several ways you can contribute:
 
-- **[Submit Pull Requests](https://github.com/sg-peytrignet/taco-image-analysis/blob/main/CONTRIBUTING.md)**: Review open PRs, and submit your own PRs.
-- **[Join the Discussions](https://github.com/sg-peytrignet/taco-image-analysis/discussions)**: Share your insights, provide feedback, or ask questions.
-- **[Report Issues](https://github.com/sg-peytrignet/taco-image-analysis/issues)**: Submit bugs found or log feature requests for Taco-image-analysis.
+- **[Submit Pull Requests](https://github.com/sg-peytrignet/trash-images-analysis/blob/main/CONTRIBUTING.md)**: Review open PRs, and submit your own PRs.
+- **[Join the Discussions](https://github.com/sg-peytrignet/trash-images-analysis/discussions)**: Share your insights, provide feedback, or ask questions.
+- **[Report Issues](https://github.com/sg-peytrignet/trash-images-analysis/issues)**: Submit bugs found or log feature requests for Trash-images-analysis.
 
 <details closed>
     <summary>Contributing Guidelines</summary>
@@ -186,7 +181,7 @@ Contributions are welcome! Here are several ways you can contribute:
 1. **Fork the Repository**: Start by forking the project repository to your GitHub account.
 2. **Clone Locally**: Clone the forked repository to your local machine using a Git client.
    ```sh
-   git clone https://github.com/sg-peytrignet/taco-image-analysis
+   git clone https://github.com/sg-peytrignet/trash-images-analysis
    ```
 3. **Create a New Branch**: Always work on a new branch, giving it a descriptive name.
    ```sh
@@ -209,13 +204,13 @@ Once your PR is reviewed and approved, it will be merged into the main branch.
 
 ---
 
-## 📄 License
+##  License
 
 This project is protected under the [SELECT-A-LICENSE](https://choosealicense.com/licenses) License. For more details, refer to the [LICENSE](https://choosealicense.com/licenses/) file.
 
 ---
 
-## 👏 Acknowledgments
+##  Acknowledgments
 
 - List any resources, contributors, inspiration, etc. here.
 
