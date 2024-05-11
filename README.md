@@ -72,6 +72,11 @@ HTTP error 429 for prompt `features`
     ├── data
     │   ├── TACO
     │   │   └── data
+    │   │	├──batch_1/
+    │   │	├──batch_2/
+    │   │	├──batch_3/
+    │   │	├──batch_.../
+    │   │	├──batch_15/
     │   │       └── annotations.json
     │   ├── features
     │   │   └── classification-labels.npz
