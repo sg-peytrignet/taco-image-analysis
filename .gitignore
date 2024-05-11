@@ -2,6 +2,7 @@
 *.jpg
 *.JPG
 *.csv
+data/TACO/data/**/*.json
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
