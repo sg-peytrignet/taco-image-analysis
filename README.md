@@ -47,7 +47,7 @@
 >   - [ Running trash-images-analysis](#-running-trash-images-analysis)
 > - [ Contributing](#-contributing)
 > - [ License](#-license)
-> - [ Acknowledgments](#-acknowledgments)
+> - [ Acknowledgments](#acknowledgments)
 
 ---
 
