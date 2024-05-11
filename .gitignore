@@ -1,7 +1,6 @@
 # Data files
 *.jpg
 *.JPG
-*.csv
 data/TACO/data/**/*.json
 **/classification-images.npz
 
