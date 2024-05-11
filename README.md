@@ -10,6 +10,7 @@
 </div>
 <p align="center">
     <h1 align="center">♻️ TRASH-IMAGES-ANALYSIS ♻️</h1>
+	<h2 align="center">A computer vision tutorial</h1>
 </p>
 
 <p align="center">
@@ -53,13 +54,32 @@
 
 ##  Overview
 
-HTTP error 429 for prompt `overview`
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 
 ---
 
 ##  Notebooks
 
-HTTP error 429 for prompt `features`
+###  1. Download data
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+<img src="http://tacodataset.org/img/logonav.png" alt="taco-logo" width="30%">
+<small><em>Trash Annotations in Context, by Pedro Proença and Pedro Simões</em></small>
+
+###  2. Exploratory data analysis
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+<img src="https://i.postimg.cc/d0tb1bLY/eda-bar-chart.png" alt="number-of-categories" width="80%">
+
+###  3. Image classification
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+###  4. Image segmentation
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 
 ---
 
@@ -162,6 +182,11 @@ conda activate taco-env
 
 Run each notebook in the IDE of your choice, such as JupyterLab or Visual Studio.
 
+To convert each notebook into an HTML document, run the command as show in the example below.
+
+```sh
+jupyter nbconvert 02_exploratory_data_analysis.ipynb
+```
 ---
 
 ##  Contributing
