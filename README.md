@@ -1,12 +1,17 @@
+
+<div align="center">
+  <div class="column">
+    <img src="https://raw.githubusercontent.com/wiki/pedropro/TACO/images/1.png" width="17%" hspace="3">
+    <img src="https://raw.githubusercontent.com/wiki/pedropro/TACO/images/2.png" width="17%" hspace="3">
+    <img src="https://raw.githubusercontent.com/wiki/pedropro/TACO/images/3.png" width="17%" hspace="3">
+    <img src="https://raw.githubusercontent.com/wiki/pedropro/TACO/images/4.png" width="17%" hspace="3">
+    <img src="https://raw.githubusercontent.com/wiki/pedropro/TACO/images/5.png" width="17%" hspace="3">
+  </div>
+</div>
 <p align="center">
-  <img src="https://cdn-icons-png.flaticon.com/512/6295/6295417.png" width="100" />
+    <h1 align="center">♻️ TRASH-IMAGES-ANALYSIS ♻️</h1>
 </p>
-<p align="center">
-    <h1 align="center">TRASH-IMAGES-ANALYSIS</h1>
-</p>
-<p align="center">
-    <em>HTTP error 429 for prompt `slogan`</em>
-</p>
+
 <p align="center">
 	<img src="https://img.shields.io/github/license/sg-peytrignet/trash-images-analysis?style=flat&color=0080ff" alt="license">
 	<img src="https://img.shields.io/github/last-commit/sg-peytrignet/trash-images-analysis?style=flat&logo=git&logoColor=white&color=0080ff" alt="last-commit">
@@ -40,8 +45,6 @@
 > - [ Getting Started](#-getting-started)
 >   - [ Installation](#-installation)
 >   - [ Running trash-images-analysis](#-running-trash-images-analysis)
->   - [ Tests](#-tests)
-> - [ Project Roadmap](#-project-roadmap)
 > - [ Contributing](#-contributing)
 > - [ License](#-license)
 > - [ Acknowledgments](#-acknowledgments)
@@ -54,7 +57,7 @@ HTTP error 429 for prompt `overview`
 
 ---
 
-##  Features
+##  Notebooks
 
 HTTP error 429 for prompt `features`
 
@@ -90,23 +93,23 @@ HTTP error 429 for prompt `features`
 
 ##  Modules
 
-<details closed><summary>.</summary>
+<details closed><summary>helper functions and virtual environment setup</summary>
 
 | File                                                                                                  | Summary                                     |
 | ---                                                                                                   | ---                                         |
-| [helpers.py](https://github.com/sg-peytrignet/trash-images-analysis/blob/master/helpers.py)           | HTTP error 429 for prompt `helpers.py`      |
-| [environment.yml](https://github.com/sg-peytrignet/trash-images-analysis/blob/master/environment.yml) | HTTP error 429 for prompt `environment.yml` |
+| [helpers.py](https://github.com/sg-peytrignet/trash-images-analysis/blob/master/helpers.py)           | `helpers.py`      |
+| [environment.yml](https://github.com/sg-peytrignet/trash-images-analysis/blob/master/environment.yml) | `environment.yml` |
 
 </details>
 
-<details closed><summary>notebooks</summary>
+<details closed><summary>analysis notebooks</summary>
 
 | File                                                                                                                                                            | Summary                                                                       |
 | ---                                                                                                                                                             | ---                                                                           |
-| [01_download_data.ipynb](https://github.com/sg-peytrignet/trash-images-analysis/blob/master/notebooks/01_download_data.ipynb)                                   | HTTP error 429 for prompt `notebooks/01_download_data.ipynb`                  |
-| [05_segmenting_images.ipynb](https://github.com/sg-peytrignet/trash-images-analysis/blob/master/notebooks/05_segmenting_images.ipynb)                           | HTTP error 429 for prompt `notebooks/05_segmenting_images.ipynb`              |
-| [04_classifying_objects.ipynb](https://github.com/sg-peytrignet/trash-images-analysis/blob/master/notebooks/04_classifying_objects.ipynb)                       | HTTP error 429 for prompt `notebooks/04_classifying_objects.ipynb`            |
-| [02_exploratory_data_analysis.ipynb](https://github.com/sg-peytrignet/trash-images-analysis/blob/master/notebooks/02_exploratory_data_analysis.ipynb)           | HTTP error 429 for prompt `notebooks/02_exploratory_data_analysis.ipynb`      |
+| [01_download_data.ipynb](https://github.com/sg-peytrignet/trash-images-analysis/blob/master/notebooks/01_download_data.ipynb)                                   | `notebooks/01_download_data.ipynb`                  |
+| [05_segmenting_images.ipynb](https://github.com/sg-peytrignet/trash-images-analysis/blob/master/notebooks/05_segmenting_images.ipynb)                           | `notebooks/05_segmenting_images.ipynb`              |
+| [04_classifying_objects.ipynb](https://github.com/sg-peytrignet/trash-images-analysis/blob/master/notebooks/04_classifying_objects.ipynb)                       | `notebooks/04_classifying_objects.ipynb`            |
+| [02_exploratory_data_analysis.ipynb](https://github.com/sg-peytrignet/trash-images-analysis/blob/master/notebooks/02_exploratory_data_analysis.ipynb)           | `notebooks/02_exploratory_data_analysis.ipynb`      |
 | [03_image_processing_for_ML_models.ipynb](https://github.com/sg-peytrignet/trash-images-analysis/blob/master/notebooks/03_image_processing_for_ML_models.ipynb) | HTTP error 429 for prompt `notebooks/03_image_processing_for_ML_models.ipynb` |
 
 </details>
@@ -119,7 +122,7 @@ HTTP error 429 for prompt `features`
 
 Ensure you have the following dependencies installed on your system:
 
-* **JupyterNotebook**: `version x.y.z`
+* **JupyterNotebook**: `version v7.1.3 `
 
 ###  Installation
 
@@ -143,27 +146,11 @@ pip install -r requirements.txt
 
 ###  Running trash-images-analysis
 
-Use the following command to run trash-images-analysis:
+Use the following command to run each notebook in trash-images-analysis:
 
 ```sh
 jupyter nbconvert --execute notebook.ipynb
 ```
-
-###  Tests
-
-To execute tests, run:
-
-```sh
-pytest notebook_test.py
-```
-
----
-
-##  Project Roadmap
-
-- [X] `► INSERT-TASK-1`
-- [ ] `► INSERT-TASK-2`
-- [ ] `► ...`
 
 ---
 
@@ -206,13 +193,14 @@ Once your PR is reviewed and approved, it will be merged into the main branch.
 
 ##  License
 
-This project is protected under the [SELECT-A-LICENSE](https://choosealicense.com/licenses) License. For more details, refer to the [LICENSE](https://choosealicense.com/licenses/) file.
+This project is protected under the [MIT]([https://choosealicense.com/licenses](https://github.com/sg-peytrignet/trash-images-analysis/blob/main/LICENSE)) License.
 
 ---
 
 ##  Acknowledgments
 
-- List any resources, contributors, inspiration, etc. here.
+- Thank you to the resources published by [Dr. Sreenivas Bhattiprolu](https://github.com/bnsreenu/python_for_microscopists/blob/master/335%20-%20Converting%20COCO%20JSON%20annotations%20to%20labeled%20mask%20images/335d-convert_coco_to_labeled_masks.py), which were useful to pre-process image data and annotations in the COCO-Json format.
+- And thank you to my supervisors at the Ecole Polytechnique Federale de Lausanne for their guidance on carrying out this project.
 
 [**Return**](#-quick-links)
 
