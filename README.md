@@ -10,7 +10,7 @@
 </div>
 <p align="center">
     <h1 align="center">♻️ TRASH-IMAGES-ANALYSIS ♻️</h1>
-	<h2 align="center">A computer vision tutorial</h1>
+	<h2 align="center">A computer vision tutorial using images of trash</h1>
 </p>
 
 <p align="center">
