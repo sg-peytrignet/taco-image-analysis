@@ -54,7 +54,7 @@
 
 ##  Overview
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+In this computer vision tutorial using Python, we delve into image classification and segmentation. It is structured as five Jupyter notebooks, which you can follow along using an open dataset that contains images of trash.
 
 ---
 
@@ -146,11 +146,11 @@ Following model training, we conduct performance assessment on the test set. We 
     ├── environment.yml
     ├── helpers.py
     ├── notebooks
-    │   ├── 01_download_data.ipynb
-    │   ├── 02_exploratory_data_analysis.ipynb
-    │   ├── 03_image_processing_for_ML_models.ipynb
-    │   ├── 04_classifying_objects.ipynb
-    │   └── 05_segmenting_images.ipynb
+    │   ├── 00_download_data.ipynb
+    │   ├── 01_exploratory_data_analysis.ipynb
+    │   ├── 02_image_processing_for_ML_models.ipynb
+    │   ├── 03_classifying_objects.ipynb
+    │   └── 04_segmenting_images.ipynb
     └── saved_models
         └── widen_param_0.05
             └── segm_model.h5
@@ -173,11 +173,11 @@ Following model training, we conduct performance assessment on the test set. We 
 
 | File                                                                                                                                                            | Summary                                                                       |
 | ---                                                                                                                                                             | ---                                                                           |
-| [01_download_data.ipynb](https://github.com/sg-peytrignet/trash-images-analysis/blob/master/notebooks/01_download_data.ipynb)                                   | `notebooks/01_download_data.ipynb`                  |
-| [02_exploratory_data_analysis.ipynb](https://github.com/sg-peytrignet/trash-images-analysis/blob/master/notebooks/02_exploratory_data_analysis.ipynb)           | `notebooks/02_exploratory_data_analysis.ipynb`      |
-| [03_image_processing_for_ML_models.ipynb](https://github.com/sg-peytrignet/trash-images-analysis/blob/master/notebooks/03_image_processing_for_ML_models.ipynb) | `notebooks/03_image_processing_for_ML_models.ipynb` |
-| [04_classifying_objects.ipynb](https://github.com/sg-peytrignet/trash-images-analysis/blob/master/notebooks/04_classifying_objects.ipynb)                       | `notebooks/04_classifying_objects.ipynb`            |
-| [05_segmenting_images.ipynb](https://github.com/sg-peytrignet/trash-images-analysis/blob/master/notebooks/05_segmenting_images.ipynb)                           | `notebooks/05_segmenting_images.ipynb`              |
+| [00_download_data.ipynb](https://github.com/sg-peytrignet/trash-images-analysis/blob/master/notebooks/00_download_data.ipynb)                                   | `notebooks/00_download_data.ipynb`                  |
+| [01_exploratory_data_analysis.ipynb](https://github.com/sg-peytrignet/trash-images-analysis/blob/master/notebooks/01_exploratory_data_analysis.ipynb)           | `notebooks/01_exploratory_data_analysis.ipynb`      |
+| [02_image_processing_for_ML_models.ipynb](https://github.com/sg-peytrignet/trash-images-analysis/blob/master/notebooks/02_image_processing_for_ML_models.ipynb) | `notebooks/02_image_processing_for_ML_models` |
+| [03_classifying_objects.ipynb](https://github.com/sg-peytrignet/trash-images-analysis/blob/master/notebooks/03_classifying_objects.ipynb)                       | `notebooks/03_classifying_objects.ipynb`            |
+| [04_segmenting_images.ipynb](https://github.com/sg-peytrignet/trash-images-analysis/blob/master/notebooks/04_segmenting_images.ipynb)                           | `notebooks/04_segmenting_images.ipynb`              |
 
 </details>
 
