@@ -54,7 +54,7 @@
 
 ##  Overview
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+In this computer vision tutorial using Python, we delve into image classification and segmentation. It is structured as five Jupyter notebooks, which you can follow along using an open dataset that contains images of trash.
 
 ---
 
