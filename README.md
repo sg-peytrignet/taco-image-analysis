@@ -60,7 +60,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 ##  Notebooks
 
-###  `01_download_data.ipynb`
+###  `00_download_data.ipynb`
 
 <img src="http://tacodataset.org/img/logonav.png" alt="taco-logo" width="30%">
 
@@ -69,9 +69,7 @@ This script provides two ways to download the TACO dataset for use in your proje
 **Download Options**
 
 - Manual Download: This is the simpler option if you prefer to download the data yourself. The script provides a link to the TACO Kaggle repository where you can download the files. Once downloaded, you'll need to move them to a specific folder structure within your project directory (instructions provided in the code).
-- Download using Kaggle API: This option automates the download process using Kaggle's API.
-
-Downloading the dataset through the Kaggle API can take some time due to its size (around 2.8 GB).
+- Download using Kaggle API: This option automates the download process using Kaggle's API. Downloading the dataset through the Kaggle API can take some time due to its size (around 2.8 GB).
 
 ###  `01_exploratory_data_analysis.ipynb`
 
