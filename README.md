@@ -60,26 +60,70 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 ##  Notebooks
 
-###  1. Download data
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+###  `01_download_data.ipynb`
 
 <img src="http://tacodataset.org/img/logonav.png" alt="taco-logo" width="30%">
-<small><em>Trash Annotations in Context, by Pedro Proença and Pedro Simões</em></small>
 
-###  2. Exploratory data analysis
+This script provides two ways to download the TACO dataset for use in your project. The TACO dataset contains images and annotations used for training object detection models, specifically focused on trash classification.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+**Download Options**
+
+- Manual Download: This is the simpler option if you prefer to download the data yourself. The script provides a link to the TACO Kaggle repository where you can download the files. Once downloaded, you'll need to move them to a specific folder structure within your project directory (instructions provided in the code).
+- Download using Kaggle API: This option automates the download process using Kaggle's API.
+
+Downloading the dataset through the Kaggle API can take some time due to its size (around 2.8 GB).
+
+###  `01_exploratory_data_analysis.ipynb`
+
+This notebook performs an exploratory data analysis (EDA) on the TACOdataset, which includes 1,500 crowd-sourced images of trash with COCO-Json annotations. This analysis helps understand the dataset's structure and prepares it for further machine learning tasks.
+
+We start by loading the necessary libraries and defining paths for data. After loading the images and annotations, we analyzed the image metadata, checking for missing data and duplicates to ensure dataset integrity.
+
+Next, we visualize random samples of annotations and analyzed their distribution by category and supercategory. This step highlighted the types of objects in the dataset and their frequencies.
 
 <img src="https://i.postimg.cc/d0tb1bLY/eda-bar-chart.png" alt="number-of-categories" width="80%">
 
-###  3. Image classification
+We created class labels for five object types:
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+- Bottles
+- Cartons
+- Cups
+- Cans
+- Plastic Film
 
-###  4. Image segmentation
+###  `02_image_processing_for_ML_models.ipynb`
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+To prepare the images for machine learning, three main functions are defined. We load these from the `helpers.py` module.
+
+- `show_annotation_image` displays the image containing the specified annotation.
+- `try_square_crop` crops the image around the annotation bounding box, with the crop size controlled by the widen_param.
+- `mask_and_square_crop` creates a mask image showing the contours of the annotation and crops this mask in the same way as the original image. This ensures that each processed image has a corresponding mask image with the same dimensions and object positioning.
+
+The cropping function is demonstrated with various widen_param values, showing how the image is cropped more closely or broadly around the annotation.
+
+<img src="https://i.postimg.cc/WpGv2MGC/processing-image-cropping.png" alt="number-of-categories" width="80%">
+
+###  `03_classifying_objects.ipynb`
+
+The dataset comprises 1,561 samples, with an unbalanced class distribution among the five classes. We use **ResNet50V2**, a pre-trained deep learning model designed for image classification tasks, to extract high-level features from the images. These features serve as the input for our machine learning models.
+
+We use two different models for classification: **K-nearest-neighbours** and **logistic regression**. The baseline performance is established using a dummy classifier, which predicts the most frequent class. For the K-NN model, a grid search with cross-validation determines the optimal number of neighbors. For our logistic regression model, we use the 'one vs. rest' approach, incorporating an L2 penalty term to prevent overfitting and balancing class weights to mitigate class imbalance.
+
+The accuracy of both models is summarised in the chart below.
+
+<img src="https://i.postimg.cc/Hx7yNTNG/classification-accuracy.png" alt="number-of-categories" width="50%">
+
+###  `04_segmenting_images.ipynb`
+
+In this notebook, we we present an approach to image segmentation, focusing specifically on the identification of bottles within images. After loading necessary Python libraries, including **keras_unet** for image segmentation, we proceed to load the processed images and their corresponding masks. These masks delineate the regions of interest, namely the bottles, within the images.
+
+For this purpose, we set up a Convolutional Neural Network (CNN) with a **U-Net architecture** for image segmentation. This architecture comprises contraction and expansive paths, designed to capture both local features and global context. To enhance model generalization and performance, we employ data augmentation techniques. Augmented images are generated to increase the diversity of the training dataset, thereby improving the model's ability to generalize to unseen data.
+
+Following model training, we conduct performance assessment on the test set. We compare the trained model's predictions against ground truth masks using metrics such as Intersection over Union (IoU) to quantify segmentation accuracy. Here below, we display two predictions made by our model: one with a poor performance, where the contour of the bottle is difficult to make out against the object backgroun, and one where the contours of the bottle are almost perfectly predicted.
+
+<img src="https://i.postimg.cc/pLXk6nYg/segm-bad-prediction.png" alt="number-of-categories" width="60%">
+
+<img src="https://i.postimg.cc/tTPzxdpV/segm-good-prediction.png" alt="number-of-categories" width="60%">
 
 ---
 
