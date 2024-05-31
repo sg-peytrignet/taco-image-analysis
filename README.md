@@ -99,7 +99,7 @@ To prepare the images for machine learning, three main functions are defined. We
 
 The cropping function is demonstrated with various widen_param values, showing how the image is cropped more closely or broadly around the annotation.
 
-<img src="https://i.postimg.cc/WpGv2MGC/processing-image-cropping.png" alt="number-of-categories" width="80%">
+<img src="https://i.ibb.co/9YHvv6R/processing-image-cropping.png" alt="number-of-categories" width="80%">
 
 ###  `03_classifying_objects.ipynb`
 
